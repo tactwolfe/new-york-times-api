@@ -1,0 +1,56 @@
+.news__holder{
+    display: grid;
+    padding: 2rem 5rem 2rem 5rem;
+    grid-template-rows: 70vh;
+    grid-template-columns: repeat(auto-fit,minmax(200px,500px));
+    grid-auto-rows: 70vh;
+    column-gap: 7.5rem;
+    row-gap: 3rem;
+
+    @media screen and (max-width:1899px) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,30vw));
+        column-gap: 3.5rem;
+        padding: 2rem;
+    }
+
+    @media screen and (max-width:1690px) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,30vw));
+        column-gap: 2.5rem;
+        padding: 2rem 1.8rem;
+    }
+
+    @media screen and (max-width:1200px) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,30vw));
+        column-gap: 2rem;
+        padding: 2rem 1.8rem;
+    }
+
+    @media screen and (max-width:1000px) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,47vw));
+        column-gap: 1.7rem;
+        padding: 2rem 1rem;
+    }
+
+    @media screen and (max-width:987px) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,30vw));
+        column-gap: 2.0rem;
+        padding: 2rem 1rem;
+    }
+
+    @media screen and (max-width:900px) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,45vw));
+        column-gap: 3.5rem;
+        padding: 2rem 1rem;
+    }
+
+    @media screen and (max-width:878px) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,95vw));
+        column-gap: 3.5rem;
+        padding: 2rem;
+    }
+  
+    @media screen and (max-width:410px) {
+        grid-template-rows: 90vh;
+        grid-auto-rows: 90vh;
+    }
+}

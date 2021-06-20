@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+.landing{
+    display: grid;
+    grid-template-rows: 6rem max-content 1fr;
+    grid-auto-rows: max-content;
+}
+.heading{
+    padding: 1rem;
+    font-size: 4rem;
+    font-family: 'Faster One', cursive;
+    text-align: center;
+    grid-row: 1/2;
+
+    @media screen and (max-width:1700px) {
+        font-size: 2.5rem;
+    }
+    @media screen and (max-width:694px) {
+        font-size: 2rem;
+    }
+    @media screen and (max-width:400px) {
+        font-size: 1.8rem;
+    }
+}
+
+.news{
+    grid-row: 3/-1;
+}

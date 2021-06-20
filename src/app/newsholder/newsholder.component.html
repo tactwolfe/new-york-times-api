@@ -1,0 +1,16 @@
+<!-- this component act as a holder to hold our news card -->
+<div class="news__holder">
+
+    <!-- this is our own card component -->
+    <app-card *ngFor="let news of newsData"
+    [abstract]='news.abstract'
+    [byline]='news.byline'
+    [created_date]='news.created_date'
+    [item_type]='news.item_type'
+    [section]='news.section'
+    [title]='news.title'
+    [url]='news.url'
+    [imageurl]='news.multimedia[4].url'
+    ></app-card>
+    
+</div>

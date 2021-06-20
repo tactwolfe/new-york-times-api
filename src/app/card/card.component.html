@@ -1,0 +1,23 @@
+<!-- our card component that display data we have fetched from new york times api -->
+
+<div class="card">
+
+    <!-- this div holds the headline of the news article -->
+    <div class="card__heading">
+        <h3 class="card__heading-text">{{title}}</h3>
+    </div>
+
+    <!-- this div holds the image for the article -->
+    <div class="card__image">
+        <img src="{{imageurl}}" alt="image" class="card__image-img">
+    </div>
+
+    <!-- this div holds info such as byline by,category of news ,type of news , url to read full article -->
+    <div class="card__info">
+        <p>-{{byline}}</p>
+        <p> <span style="color: red;">Category :&nbsp;</span> {{section}}</p>
+        <p> <span style="color: red;">Created on : </span> {{created_date}}</p>
+        <p> <span style="color: red;">Type : </span> {{item_type}}</p>
+        <p>{{abstract}} <span><a href="{{url}}" target="_blank">read more...</a></span> </p>
+    </div>
+</div>

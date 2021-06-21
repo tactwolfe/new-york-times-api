@@ -53,4 +53,8 @@
         grid-template-rows: 90vh;
         grid-auto-rows: 90vh;
     }
+    @media screen and (max-width:360px) {
+        grid-template-rows: 150vh;
+        grid-auto-rows: 150vh;
+    }
 }
